@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 60px;
+    z-index: 3;
+}
+header h1{
+    float: left;
+}
+.logo{
+    width: 200px;
+    filter: opacity(0.5) drop-shadow(0 0 0 rgb(2, 99, 2));
+}
+a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #eee;
+}
+.main-navigation{
+    float: right;
+}
+.main-navigation a{
+    color: #eee;
+    margin-left: 40px;
+}
+.main-navigation a.active{
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 174, 244);
+}
+.btn{
+    display: inline-block;
+    color: green;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 24px;
+    background-color: #eee;
+}
+.ghost-btn{
+    background-color: transparent;
+    border: 1px solid rgb(255, 174, 244);
+    color: #eee;
+}
+.video-wrap{
+    position: relative;
+    width: calc( 100% - 520px );
+}
+.video-wrap video{
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /*비디오의 중간이 항상 보이도록*/
+}
+/*-------------하단 텍스트 영역--------------*/
+.text-wrap{
+    width: 520px;
+    height: 100vh;
+    padding: 150px 60px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: green;
+    z-index: 1;
+}
+.text-wrap h2{
+    color: #fff;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.text-wrap h3{
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.text-wrap p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.sns-wrap{
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    z-index: 3;
+
+}
+.icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background-size: contain;
+}
