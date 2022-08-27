@@ -21,36 +21,47 @@
     <meta name="description" content="HTML meta tag page">
     <!-- 검색엔진을 위한 키워드 정의 -->
     <meta name="keyword" content="HTML, meta, tag, element, reference">
+    <script type="text/javascript" src="js/video_bg.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><a href="#"><img class="logo" src="assets/logo_20db_white.png" alt=""></a></h1>
-        <nav class="main-navigation">
-            <div class="container">
-                <a class="active" href="#">소개</a>
-                <a href="#">포트폴리오</a>
-                <a href="#">문의하기</a>
-                <a href="#" class="btn ghost-btn">깃허브</a>
-        </nav>
+        <div class="container">
+            <h1><a href="#"><img class="logo" src="assets/logo_20db_white.png" alt=""></a></h1>
+            <nav class="main-navigation">
+                <div class="container">
+                    <a class="active" href="#">소개</a>
+                    <a href="#">포트폴리오</a>
+                    <a href="#">깃허브</a>
+                    <a href="#" class="btn ghost-btn">문의하기</a>
+            </nav>
+            <button class="more-btn">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
     </header>
-    <div class="container">
+    <main class="hero-bg">
         <div class="video-wrap">
             <video src="assets/pexels_video1.mp4" muted autoplay loop></video>
         </div>
-        <div class="text-wrap">
-            <h2>수채화처럼<br>디자인하는<br>웹퍼블리셔</h2>
-            <h3>맑고 투명하고 조화로운 디자인 코딩</h3>
-            <p>HTML, CSS, JavaScript, Jquery<br>반응형 웹사이트입니다</p>
-            <div class="btn-wrap">
-                <a href="#" class="btn">둘러보기</a>
-                <a href="#" class="btn ghost-btn">문의하기</a>
+        <div class="container">
+            <div class="text-wrap">
+                <h2>수채화처럼<br>디자인하는<br>웹퍼블리셔</h2>
+                <h3>맑고 투명하고 조화로운 디자인 코딩</h3>
+                <p>HTML, CSS, JavaScript, Jquery<br>반응형 웹사이트입니다</p>
+                <div class="btn-wrap">
+                    <a href="#" class="btn">둘러보기</a>
+                    <a href="#" class="btn ghost-btn">문의하기</a>
+                </div>
             </div>
         </div>
+    </main>
+    <div class="sns-wrap">
+        <a href="#" class="icon icon-facebook"><i class="fa fa-facebook-official"></i></a>
+        <a href="#" class="icon icon-twitter"><i class="fa fa-twitter"></i></a>
+        <a href="#" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a>
     </div>
-        <div class="sns-wrap">
-            <a href="#" class="icon icon-facebook"><i class="fa fa-facebook-official"></i></a>
-            <a href="#" class="icon icon-twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="icon icon-linkedin"><i class="fa fa-linkedin"></i></a>
-        </div>
+    <!-- jQuery 불러오기 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 </html>
